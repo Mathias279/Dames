@@ -1,2 +1,2 @@
 # Dames
-Jeu de dames pour java EPHEC 2e info
+Jeu de dames pour java EPHEC 2e 2016
