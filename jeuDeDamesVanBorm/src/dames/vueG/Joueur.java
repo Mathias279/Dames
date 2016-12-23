@@ -9,7 +9,7 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class Joueur extends JFrame{
         
@@ -27,12 +27,20 @@ public class Joueur extends JFrame{
     private boolean blanc;
     private int points;
 
+    /**
+     *
+     */
     public Joueur() {
         this.pseudo = "pas de pseudo";
         this.nombrePions = 0;
         this.blanc = true;
         this.points = 0;
     }
+
+    /**
+     *
+     * @param nbrPions
+     */
     public Joueur(int nbrPions) {
         this.pseudo = "pas de pseudo";
         this.nombrePions = nbrPions;
@@ -42,8 +50,14 @@ public class Joueur extends JFrame{
         this.setSize(400,400);
     }
 
-    
-    
+    /**
+     *
+     * @param pseudo
+     * @param nombrePions
+     * @param pionsJoueur
+     * @param blanc
+     * @param points
+     */
     public Joueur(String pseudo, int nombrePions, Pion[] pionsJoueur, boolean blanc, int points) {
         this.pseudo = pseudo;
         this.nombrePions = nombrePions;
@@ -51,11 +65,18 @@ public class Joueur extends JFrame{
         this.points = points;
     }
 
+    /**
+     *
+     * @param blanc
+     */
     public void setBlanc(boolean blanc) {
         this.blanc = blanc;
     }
 
-
+    /**
+     *
+     * @return
+     */
     public int getNombrePions() {
         return nombrePions;
     }

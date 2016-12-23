@@ -10,16 +10,23 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class Partie{
     Joueur joueur1;
     Joueur joueur2;
     int    tailleDamier;
+
+    /**
+     *
+     */
     public Map    plateau;
     int    nombrePions;
 
-    
+    /**
+     *
+     * @param taille
+     */
     public Partie(int taille) {
         this.tailleDamier = taille;
         this.plateau = new dames.vueG.Map(tailleDamier);
@@ -33,6 +40,10 @@ public class Partie{
         joueur2.setVisible(true);
     }
 
+    /**
+     *
+     * @return
+     */
     public Map getPlateau() {
         return plateau;
     }

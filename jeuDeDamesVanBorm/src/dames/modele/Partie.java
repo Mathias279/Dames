@@ -5,20 +5,26 @@
  */
 package dames.modele;
 
-import dames.modele.Position;
 import javax.swing.JFrame;
 
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class Partie extends JFrame {
     Joueur joueur1;
     Joueur joueur2;
     int    tailleDamier;
+
+    /**
+     *
+     */
     public Map    plateau;
     int    nombrePions;
 
+    /**
+     *
+     */
     public Partie() {
         this.joueur1 = new Joueur();
         this.joueur1.setBlanc(true);
@@ -29,6 +35,10 @@ public class Partie extends JFrame {
         this.nombrePions = 24;
     }
     
+    /**
+     *
+     * @param taille
+     */
     public Partie(int taille) {
         this.tailleDamier = taille;
         this.plateau = new Map(tailleDamier);
@@ -39,7 +49,9 @@ public class Partie extends JFrame {
         this.joueur1.setBlanc(false);
     }
     
-
+    /**
+     *
+     */
     public void mettrePions(){
         
         int i,j,a=0,b=0;

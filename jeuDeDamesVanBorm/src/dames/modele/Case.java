@@ -7,7 +7,7 @@ package dames.modele;
 
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class Case {
     private Position position ;
@@ -16,12 +16,18 @@ public class Case {
     private boolean occupeParBlanc; 
     private boolean occupeParDame;
         
-        
+    /**
+     *
+     */
     public Case(){
         
     }
             
-        
+    /**
+     *
+     * @param x
+     * @param y
+     */
     public Case(int x, int y) {
         this.position = new Position(x,y);
         this.occupe = false;    
@@ -35,28 +41,50 @@ public class Case {
         }  
     }
 
+    /**
+     *
+     * @param position
+     */
     public void setPosition(Position position) {
         this.position = position;
     }
 
-    
-
+    /**
+     *
+     * @return
+     */
     public boolean isOccupe() {
         return occupe;
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean isOccupeParBlanc() {
         return occupeParBlanc;
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean isOccupeParDame() {
         return occupeParDame;
     }
 
+    /**
+     *
+     * @param occupe
+     */
     public void setOccupe(boolean occupe) {
         this.occupe = occupe;
     }
 
+    /**
+     *
+     * @param occupeParBlanc
+     */
     public void setOccupeParBlanc(boolean occupeParBlanc) {
         this.occupeParBlanc = occupeParBlanc;
     }

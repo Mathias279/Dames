@@ -1,20 +1,17 @@
 package dames.socket;
 
-import dames.modele.MapM;
 import dames.modele.PionM;
-import java.awt.event.ActionEvent;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import main.JeuDeDames;
 
+/**
+ *
+ * @author Mathias Van Borm
+ */
 public class Serveur {
 	private ServerSocket s ;
 	private JeuDeDames jeudedames;
@@ -24,8 +21,13 @@ public class Serveur {
 	private ObjectOutputStream out;
 	private ObjectInputStream in;
 	
-        
-	public Serveur(JeuDeDames jeudedames) throws IOException, ClassNotFoundException{
+    /**
+     *
+     * @param jeudedames
+     * @throws IOException
+     * @throws ClassNotFoundException
+     */
+    public Serveur(JeuDeDames jeudedames) throws IOException, ClassNotFoundException{
 	
             int nbrPions = jeudedames.getControleur().getNbrPions();
             mesPions= new PionM[nbrPions];
@@ -48,6 +50,11 @@ public class Serveur {
             //out.close();
             
         }
+
+    /**
+     *
+     * @throws IOException
+     */
     public void fermerServeur() throws IOException{
         socket.close();
     }

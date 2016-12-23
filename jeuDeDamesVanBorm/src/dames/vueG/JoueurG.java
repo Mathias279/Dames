@@ -21,7 +21,7 @@ import main.JeuDeDames;
 
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class JoueurG extends JFrame{
             
@@ -33,12 +33,22 @@ public class JoueurG extends JFrame{
     private JPanel panel;
     private JButton[][] cases;
 
+    /**
+     *
+     */
     public JoueurG() {
         this.pseudo = "pas de pseudo";
         this.nombrePionsMoi = 0;
         this.blanc = true;
         this.points = 0;
     }
+
+    /**
+     *
+     * @param jeudedames
+     * @param joueur
+     * @param blanc
+     */
     public JoueurG(JeuDeDames jeudedames, String joueur,boolean blanc) {
         this.pseudo = joueur;
         //this.nombrePions = nbrPions;
@@ -142,8 +152,14 @@ public class JoueurG extends JFrame{
         this.add(panel);
     }
 
-    
-    
+    /**
+     *
+     * @param pseudo
+     * @param nombrePionsMoi
+     * @param pionsJoueur
+     * @param blanc
+     * @param points
+     */
     public JoueurG(String pseudo, int nombrePionsMoi, PionG[] pionsJoueur, boolean blanc, int points) {
         this.pseudo = pseudo;
         this.nombrePionsMoi = nombrePionsMoi;
@@ -151,11 +167,18 @@ public class JoueurG extends JFrame{
         this.points = points;
     }
 
+    /**
+     *
+     * @param blanc
+     */
     public void setBlanc(boolean blanc) {
         this.blanc = blanc;
     }
 
-
+    /**
+     *
+     * @return
+     */
     public int getNombrePions() {
         return nombrePionsMoi;
     }

@@ -10,7 +10,7 @@ import main.JeuDeDames;
 
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class JoueurM implements Serializable {
     private String pseudo;
@@ -18,9 +18,17 @@ public class JoueurM implements Serializable {
     private PionM [] pions ;
     private boolean blanc;
     private int points;
+
+    /**
+     *
+     */
     public MapM    plateau;
     private JeuDeDames jeudedames;
 
+    /**
+     *
+     * @param jeudedames
+     */
     public JoueurM(JeuDeDames jeudedames) {
         this.jeudedames = jeudedames;
         //this.pseudo = "pas de pseudo";
@@ -36,6 +44,11 @@ public class JoueurM implements Serializable {
         this.blanc = true;
         this.points = 0;
     }
+
+    /**
+     *
+     * @param taille
+     */
     public JoueurM(int taille) {
         this.pseudo = "pas de pseudo";
         this.nombrePions = 0;
@@ -50,8 +63,14 @@ public class JoueurM implements Serializable {
         
     }
 
-    
-    
+    /**
+     *
+     * @param pseudo
+     * @param nombrePions
+     * @param pionsJoueur
+     * @param blanc
+     * @param points
+     */
     public JoueurM(String pseudo, int nombrePions, PionM[] pionsJoueur, boolean blanc, int points) {
         this.pseudo = pseudo;
         this.nombrePions = nombrePions;
@@ -60,26 +79,51 @@ public class JoueurM implements Serializable {
         this.points = points;
     }
 
+    /**
+     *
+     * @param blanc
+     */
     public void setBlanc(boolean blanc) {
         this.blanc = blanc;
     }
 
+    /**
+     *
+     * @return
+     */
     public PionM[] getPions() {
         return pions;
     }
 
+    /**
+     *
+     * @param pions
+     */
     public void setPions(PionM[] pions) {
         this.pions = pions;
     }
     
+    /**
+     *
+     * @param n
+     * @return
+     */
     public PionM getPion(int n) {
         return pions[n];
     }
 
+    /**
+     *
+     * @return
+     */
     public int getNombrePions() {
         return nombrePions;
     }
 
+    /**
+     *
+     * @param jeudedames
+     */
     public void mettrePions(JeuDeDames jeudedames){
         
         int taille = jeudedames.getControleur().getTaille();
@@ -119,6 +163,10 @@ public class JoueurM implements Serializable {
         }
     }
 
+    /**
+     *
+     * @param pion
+     */
     public void inverserCoordonnées(PionM[] pion){
         int taille = jeudedames.getControleur().getTaille();
         int nbrPieces = pion.length+1;
@@ -133,11 +181,19 @@ public class JoueurM implements Serializable {
         }
     }
     
+    /**
+     *
+     * @return
+     */
     public PionM[] getPionsM() {
         return this.pions;
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    /**
+     *
+     * @param sesPions
+     */
     public void setPionsM(PionM[] sesPions) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

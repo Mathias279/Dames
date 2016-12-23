@@ -9,7 +9,7 @@ package dames.vueG;
 
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class Pion {
     private boolean blanc;

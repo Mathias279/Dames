@@ -7,7 +7,7 @@ package dames.modele;
 
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class Joueur {
     private String pseudo;
@@ -16,6 +16,9 @@ public class Joueur {
     private boolean blanc;
     private int points;
 
+    /**
+     *
+     */
     public Joueur() {
         this.pseudo = "pas de pseudo";
         this.nombrePions = 0;
@@ -29,6 +32,11 @@ public class Joueur {
         this.blanc = true;
         this.points = 0;
     }
+
+    /**
+     *
+     * @param nbrPions
+     */
     public Joueur(int nbrPions) {
         this.pseudo = "pas de pseudo";
         this.nombrePions = nbrPions;
@@ -43,8 +51,14 @@ public class Joueur {
         
     }
 
-    
-    
+    /**
+     *
+     * @param pseudo
+     * @param nombrePions
+     * @param pionsJoueur
+     * @param blanc
+     * @param points
+     */
     public Joueur(String pseudo, int nombrePions, Pion[] pionsJoueur, boolean blanc, int points) {
         this.pseudo = pseudo;
         this.nombrePions = nombrePions;
@@ -53,22 +67,43 @@ public class Joueur {
         this.points = points;
     }
 
+    /**
+     *
+     * @param blanc
+     */
     public void setBlanc(boolean blanc) {
         this.blanc = blanc;
     }
 
+    /**
+     *
+     * @return
+     */
     public Pion[] getPionsJoueur() {
         return pionsJoueur;
     }
     
+    /**
+     *
+     * @param n
+     * @return
+     */
     public Pion getPionJoueur(int n) {
         return pionsJoueur[n];
     }
 
+    /**
+     *
+     * @return
+     */
     public int getNombrePions() {
         return nombrePions;
     }
 
+    /**
+     *
+     * @param pionsJoueur
+     */
     public void setPionsJoueur(Pion[] pionsJoueur) {
         this.pionsJoueur = pionsJoueur;
     }

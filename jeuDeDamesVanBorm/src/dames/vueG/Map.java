@@ -9,14 +9,17 @@ import javax.swing.*;
         
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class Map extends JPanel {
     
     private int taille;
     private Case[][] tableauCases;
     
-    
+    /**
+     *
+     * @param taille
+     */
     public Map(int taille) {
         this.taille = taille;
         this.tableauCases = new Case[taille][taille];
@@ -30,8 +33,10 @@ public class Map extends JPanel {
         }
     }
     
-    
-    
+    /**
+     *
+     * @return
+     */
     public int getTaille() {
         return taille;
     }

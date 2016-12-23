@@ -13,7 +13,7 @@ import javax.swing.*;
         
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class MapG extends JPanel {
     Controleur controleur;
@@ -21,7 +21,10 @@ public class MapG extends JPanel {
     private int taille;
     private CaseG[][] tableauCases;
     
-    
+    /**
+     *
+     * @param taille
+     */
     public MapG(int taille) {
         this.taille = taille;
         this.tableauCases = new CaseG[taille][taille];
@@ -54,6 +57,10 @@ public class MapG extends JPanel {
 		return panel;
     }
     
+    /**
+     *
+     * @return
+     */
     public int getTaille() {
         return taille;
     }

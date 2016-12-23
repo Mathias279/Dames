@@ -23,7 +23,7 @@ import main.JeuDeDames;
 
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class PartieG extends JFrame {
     private int    tailleDamier;
@@ -34,9 +34,10 @@ public class PartieG extends JFrame {
     private JPanel panel;
     private JButton[][] cases;
     
-    
-
-    
+    /**
+     *
+     * @param jeudedames
+     */
     public PartieG(final JeuDeDames jeudedames) { 
         this.jeudedames=jeudedames;
         this.tailleDamier = jeudedames.getControleur().getTaille();
@@ -137,6 +138,10 @@ public class PartieG extends JFrame {
         
     }
 
+    /**
+     *
+     * @return
+     */
     public MapG getPlateau() {
         return plateau;
     }

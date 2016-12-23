@@ -5,13 +5,9 @@
  */
 package dames.modele;
 
-import dames.modele.PositionM;
-import dames.modele.JoueurM;
-import javax.swing.JFrame;
-
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class PartieM  {
     JoueurM joueurServer;
@@ -19,6 +15,9 @@ public class PartieM  {
     int    tailleDamier;
     int    nombrePions;
 
+    /**
+     *
+     */
     public PartieM() {
         //this.joueurServer = new JoueurM();
         this.joueurServer.setBlanc(true);
@@ -31,6 +30,10 @@ public class PartieM  {
         this.nombrePions = 24;
     }
     
+    /**
+     *
+     * @param taille
+     */
     public PartieM(int taille) {
         this.tailleDamier = taille;
         //this.plateau = new MapM(tailleDamier);

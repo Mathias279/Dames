@@ -1,21 +1,17 @@
 package dames.socket;
 
-import java.awt.event.ActionEvent;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
-
-import dames.controleur.Controleur;
 import dames.modele.PionM;
 import main.JeuDeDames;
 
+/**
+ *
+ * @author Mathias Van Borm
+ */
 public class Client {
 	InetAddress localIP;
 	PionM[] mesPions;
@@ -25,7 +21,12 @@ public class Client {
 	private ObjectOutputStream out;
 	private ObjectInputStream in ;
         
-        
+    /**
+     *
+     * @param jeudedames
+     * @throws IOException
+     * @throws ClassNotFoundException
+     */
     public Client(JeuDeDames jeudedames) throws IOException, ClassNotFoundException{
         int nbrPions = jeudedames.getControleur().getNbrPions();
         //int nombrePions = moi.
@@ -47,6 +48,11 @@ public class Client {
         sesPions = (PionM[]) objetRecu;
         jeudedames.getControleur().getLautre().setPionsM(sesPions);
     }    
+
+    /**
+     *
+     * @throws IOException
+     */
     public void fermerServeur() throws IOException{
         socket.close();
     }

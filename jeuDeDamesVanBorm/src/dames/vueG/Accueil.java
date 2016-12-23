@@ -23,14 +23,16 @@ import main.JeuDeDames;
 
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class Accueil extends JFrame {
     private JeuDeDames jeudedames;
     private int taille;
 
-        
-        
+    /**
+     *
+     * @param jeudedames
+     */
     public Accueil(JeuDeDames jeudedames) {              
         JTextField tailleChoisie = new JTextField(5);   
         JLabel TexteTaille = new JLabel("quelle taille de damier? (8 - 10 - 12)");  
@@ -62,6 +64,10 @@ public class Accueil extends JFrame {
     //    return Integer.pparseInt(tailleChoisie.getText());
     //}
     
+    /**
+     *
+     * @param taille
+     */
     public void setTaille(int taille){
         this.taille = taille;
         jeudedames.getControleur().setTaille(taille);

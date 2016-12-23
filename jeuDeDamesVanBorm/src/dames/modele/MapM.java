@@ -8,13 +8,16 @@ package dames.modele;
 
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class MapM {
     final int taille;
     private CaseM[][] tableauCases;
 
-    
+    /**
+     *
+     * @param taille
+     */
     public MapM(int taille) {
         this.taille = taille;
         this.tableauCases = new CaseM[taille][taille];
@@ -28,20 +31,38 @@ public class MapM {
         }
     }
                       
-          
+    /**
+     *
+     * @param taille
+     * @param tableauCases
+     */
     public MapM(int taille, CaseM[][] tableauCases) {
         this.taille = taille;
         this.tableauCases = tableauCases;
     } 
     
+    /**
+     *
+     * @return
+     */
     public int getTaille() {
         return taille;
     }
 
+    /**
+     *
+     * @return
+     */
     public CaseM[][] getTableauCases() {
         return tableauCases;
     }
     
+    /**
+     *
+     * @param x
+     * @param y
+     * @return
+     */
     public CaseM getTableauCases(int x, int y) {
         return tableauCases[x][y];
     }

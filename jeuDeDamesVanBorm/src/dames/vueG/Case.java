@@ -8,7 +8,7 @@ import dames.modele.Position;
 
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class Case {
 
@@ -18,9 +18,11 @@ public class Case {
     private boolean occupeParBlanc; 
     private boolean occupeParDame;
 
-    
-    
-        
+    /**
+     *
+     * @param x
+     * @param y
+     */
     public Case(int x, int y) {
         this.position = new Position(x,y);
         this.occupe = false;    
@@ -34,25 +36,34 @@ public class Case {
         }  
     }
     
-    
-    
-    
-    
-    
-    
+    /**
+     *
+     * @return
+     */
     public boolean isOccupe() {
         return occupe;
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean isOccupeParBlanc() {
         return occupeParBlanc;
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean isOccupeParDame() {
         return occupeParDame;
     }
         
-    
+    /**
+     *
+     * @return
+     */
     public String caseConsole(){
      
         String affiche = "";

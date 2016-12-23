@@ -6,24 +6,26 @@ package main;
  * and open the template in the editor.
  */
         
-import dames.controleur.*;
-import dames.modele.*;
-import dames.vueC.PartieCons;
-import dames.vueG.PartieG;
-        
-import dames.controleur.*;
-import dames.vueG.Accueil;
-import javax.swing.SwingUtilities;
+import dames.controleur.Controleur;
 /**
  *
  * @author Mathias Van Borm
  */
 public class JeuDeDames{
         private Controleur controleur = new Controleur();
-	public Controleur getControleur() {
+
+    /**
+     *
+     * @return
+     */
+    public Controleur getControleur() {
             return controleur;
 	}
         
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args){
         JeuDeDames jeudedames = new JeuDeDames();
         jeudedames.getControleur().getAccueil(jeudedames);

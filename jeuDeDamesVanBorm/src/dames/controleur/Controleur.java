@@ -13,7 +13,7 @@ import main.JeuDeDames;
 
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class Controleur {
     
@@ -34,51 +34,96 @@ public class Controleur {
     Client client;
     Serveur serveur;
     
+    /**
+     *
+     */
     public Controleur(){
         moi = new JoueurM(jeudedames);
         lautre = new JoueurM(jeudedames);
     }
     
+    /**
+     *
+     * @return
+     */
     public Accueil getAccueil(){    
         return accueil;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getNbrPions() {
         return nbrPions;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getNbrPionsLautre() {
         return lautre.getNombrePions();
     }
 
+    /**
+     *
+     * @return
+     */
     public int getNbrPionsMoi() {
         return moi.getNombrePions();
     }
 
+    /**
+     *
+     * @param nbrPions
+     */
     public void setNbrPions(int nbrPions) {
         this.nbrPions = nbrPions;
     }
     
-    
+    /**
+     *
+     * @param jeudedames
+     * @param joueur
+     * @param blanc
+     */
     public void getJoueurG(JeuDeDames jeudedames, String joueur,boolean blanc){
         joueurG= new JoueurG(jeudedames, joueur,blanc);
         joueurG.setVisible(true);
         jeudedames.getControleur().partieG.dispose();
     }
     
+    /**
+     *
+     * @param taille
+     */
     public void setTaille(int taille) {
         this.taille = taille;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getTaille() {
         return taille;
     }
     
+    /**
+     *
+     * @param jeudedames
+     */
     public void getAccueil(JeuDeDames jeudedames){
         accueil = new Accueil(jeudedames);
         accueil.setVisible(true);
 
     }
+
+    /**
+     *
+     * @param jeudedames
+     */
     public void getPartieG(JeuDeDames jeudedames){
         System.out.println(this.taille);
         jeudedames.getControleur().moi.mettrePions(jeudedames);
@@ -87,23 +132,42 @@ public class Controleur {
         jeudedames.getControleur().accueil.dispose();        
     }
     
-    
+    /**
+     *
+     * @param jeudedames
+     * @throws IOException
+     * @throws ClassNotFoundException
+     */
     public void getServeur(JeuDeDames jeudedames) throws IOException, ClassNotFoundException{
         String joueur="joueur serveur";
         serveur = new Serveur(jeudedames);
         jeudedames.getControleur().getJoueurG(jeudedames,joueur,true);
     }
     
+    /**
+     *
+     * @param jeudedames
+     * @throws IOException
+     * @throws ClassNotFoundException
+     */
     public void getClient(JeuDeDames jeudedames) throws IOException, ClassNotFoundException{
         String joueur="joueur client";
         client = new Client(jeudedames);
         jeudedames.getControleur().getJoueurG(jeudedames,joueur,false);
     }
 
+    /**
+     *
+     * @return
+     */
     public JoueurM getMoi() {
         return moi;
     }
 
+    /**
+     *
+     * @return
+     */
     public JoueurM getLautre() {
         return lautre;
     }

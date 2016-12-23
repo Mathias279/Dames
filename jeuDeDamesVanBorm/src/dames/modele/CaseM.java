@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Lenovo
+ * @author Mathias Van Borm
  */
 public class CaseM implements Serializable {
     private PositionM position ;
@@ -18,12 +18,18 @@ public class CaseM implements Serializable {
     private boolean occupeParBlanc; 
     private boolean occupeParDame;
         
-        
+    /**
+     *
+     */
     public CaseM(){
         
     }
             
-        
+    /**
+     *
+     * @param x
+     * @param y
+     */
     public CaseM(int x, int y) {
         this.position = new PositionM(x,y);
         this.occupe = false;    
@@ -37,28 +43,50 @@ public class CaseM implements Serializable {
         }  
     }
 
+    /**
+     *
+     * @param position
+     */
     public void setPosition(PositionM position) {
         this.position = position;
     }
 
-    
-
+    /**
+     *
+     * @return
+     */
     public boolean isOccupe() {
         return occupe;
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean isOccupeParBlanc() {
         return occupeParBlanc;
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean isOccupeParDame() {
         return occupeParDame;
     }
 
+    /**
+     *
+     * @param occupe
+     */
     public void setOccupe(boolean occupe) {
         this.occupe = occupe;
     }
 
+    /**
+     *
+     * @param occupeParBlanc
+     */
     public void setOccupeParBlanc(boolean occupeParBlanc) {
         this.occupeParBlanc = occupeParBlanc;
     }
