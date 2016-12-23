@@ -3,22 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/vueG/Joueur.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/vueG/Map.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/modele/Map.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/vueG/Partie.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/vueC/Partie.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/controleur/Partie.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/vueC/Map.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/modele/Joueur.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/modele/Partie.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/modele/Position.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/main/JeuDeDames.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/vueC/Joueur.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/vueG/Case.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/vueC/Case.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/modele/Pion.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/modele/Case.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/modele/CaseM.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/socket/Serveur.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/vueG/Accueil.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/socket/Client.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/controleur/Controleur.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/modele/PionM.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/modele/PositionM.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/vueG/PartieG.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/vueG/JoueurG.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/modele/JoueurM.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/EPHEC%203e%20bis/projet%20java/code/jeuDeDamesVanBorm/src/dames/modele/MapM.java</file>
         </group>
     </open-files>
 </project-private>
